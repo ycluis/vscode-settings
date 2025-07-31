@@ -19,8 +19,7 @@
   "explorer.openEditors.visible": 1,
   // ====== Editor ======
   "editor.cursorBlinking": "expand",
-  // "editor.fontFamily": "MonoLisa, Consolas",
-  "editor.fontFamily": "Input Mono, monospace",
+  "editor.fontFamily": "MonoLisa, Consolas",
   "editor.fontSize": 18,
   // "editor.fontWeight": "500",
   "editor.fontLigatures": true,
