@@ -1,8 +1,8 @@
 {
   // ====== Visuals ======
   "window.titleBarStyle": "custom",
-  "workbench.colorTheme": "Monokai Pro (Filter Spectrum)",
-  "workbench.iconTheme": "Monokai Pro (Filter Spectrum) Icons",
+  "workbench.colorTheme": "Monokai Pro",
+  "workbench.iconTheme": "Monokai Pro Icons",
   "workbench.productIconTheme": "icons-carbon",
   "workbench.startupEditor": "newUntitledFile",
   "workbench.tree.expandMode": "singleClick",
@@ -19,11 +19,11 @@
   "explorer.openEditors.visible": 1,
   // ====== Editor ======
   "editor.cursorBlinking": "expand",
-  "editor.fontFamily": "MonoLisa, Consolas",
+  "editor.fontFamily": "Dank Mono, MonoLisa, Consolas",
   "editor.fontSize": 18,
-  // "editor.fontWeight": "500",
   "editor.fontLigatures": true,
-  "editor.fontVariations": false,
+  "editor.fontVariations": true,
+  "editor.fontWeight": "400",
   "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>/?",
   "editor.tabSize": 2,
   "editor.wordWrap": "on",
@@ -34,7 +34,7 @@
   "editor.formatOnType": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit"
+    "source.fixAll.eslint": "explicit",
   },
   "editor.smoothScrolling": true,
   "editor.stickyScroll.enabled": true,
@@ -54,14 +54,14 @@
   "terminal.integrated.persistentSessionReviveProcess": "never",
   "terminal.integrated.tabs.enabled": true,
   // ====== Language-specific Settings ======
-  "[astro]": {
-    "editor.defaultFormatter": "astro-build.astro-vscode"
-  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
   "[typescript]": {
     "editor.defaultFormatter": "vscode.typescript-language-features"
   },
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "typescript.updateImportsOnFileMove.enabled": "always",
+  "[astro]": {
+    "editor.defaultFormatter": "astro-build.astro-vscode"
+  },
   "[jsonc]": {
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "vscode.json-language-features"
@@ -91,6 +91,20 @@
     "editor.formatOnSave": true,
     "editor.formatOnSaveMode": "file"
   },
+  "[dockercompose]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "advanced",
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": true
+    },
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
   },
@@ -102,8 +116,8 @@
     "**/*.snap": true,
     "**/*.svg": true,
     "**/.git": true,
-    "**/.github": false,
-    "**/.nuxt": true,
+    "**/.github": true,
+    "**/.next": true,
     "**/.output": true,
     "**/.pnpm": true,
     "**/.vscode": true,
@@ -123,12 +137,10 @@
     "**/LICENSE*": true,
   },
   "security.workspace.trust.untrustedFiles": "open",
-  "vsicons.dontShowNewVersionMessage": true,
   "docker.extension.dockerEngineAvailabilityPrompt": false,
   "docker.extension.enableComposeLanguageServer": false,
+  "update.showReleaseNotes": false,
   "github.copilot.enable": {
     "*": true,
-    "markdown": true,
-    "plaintext": false,
   },
 }
