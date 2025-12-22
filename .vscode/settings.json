@@ -19,7 +19,7 @@
   "explorer.openEditors.visible": 1,
   // ====== Editor ======
   "editor.cursorBlinking": "expand",
-  "editor.fontFamily": "Dank Mono, MonoLisa, Consolas",
+  "editor.fontFamily": "MonoLisa, Dank Mono, Consolas",
   "editor.fontSize": 18,
   "editor.fontLigatures": true,
   "editor.fontVariations": true,
